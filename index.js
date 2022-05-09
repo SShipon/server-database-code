@@ -18,7 +18,7 @@ async function run() {
     try {
         await client.connect();
         const productCollection = client.db('shipon-laptop').collection('laptop-products')
-        const userEmailCollection = client.db("UserEmail").collection("email");
+        const userEmailCollection = client.db("UserEmail").collection("emailProduct");
         //get
         app.get('/product', async (req, res) => {
             const query = {};
