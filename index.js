@@ -58,7 +58,7 @@ async function run() {
             res.send(result)
          });
         
-        //get
+        //get user email
          app.get('/user', async (req, res) => {
             const query = {};
             const cursor = userEmailCollection.find(query)
